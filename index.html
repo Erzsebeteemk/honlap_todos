@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos kis telefon nezet</title>
+    <script src="https://kit.fontawesome.com/bc8a046247.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section>
+
+
+<div id="fentfix">
+    <div class="kontenerikon"> </div>
+    <input id="inputMezo"   type="text"  value=""  maxlength="" onkeydown="billty(event)">
+    <div class="kontener"> </div>
+    <div id="csik"> </div>
+
+    <div id="haromgomb">
+        <button class="gombok" id="fogomb"> Listába </button>
+        <button class="gombok" id="ujelem"> Új</button>
+        <button class="gombok" id="veletlenhatter"> Háttér </button>
+    </div>
+
+    <div id="csik"> </div>
+</div>
+
+
+
+    <h1>Todos színesen</h1>
+    <h3>háttér, sorok, szöveg </h3>
+    <p>színét kedved szerint módosítanád? Katt a háttér gombra, a sorokra, az űrsiklóra. 
+    Szórakoztató jegyzet, lista.</p>
+
+
+
+
+
+
+
+
+
+
+        <!-- Maradjon meg, ne töröljük ki! Ez a 2. változat is működik, a bevitel css-sel. A fentfix 1. változat is működik, a bevitel css nélkül.
+        Ennél a cím van elöl és nincs képernyőhöz fixálás.
+        A "D, 2021.10.09-én, Kivette a 9-es számot..." sort kell kommentbe tenni.
+            
+        <div class="kontenerikon"> </div>
+
+        <h1>Todos színesen</h1>
+        <h3>háttér, sorok, szöveg </h3>
+        <p>színét kedved szerint módosítanád? Katt a háttér gombra, a sorokra, az űrsiklóra. 
+        Lista, jegyzet, szótár színjátékkal. Jó szórakozást! </p>
+
+        <div id="bevitel">
+
+            <div class="kontener"> </div>
+                D, 2021.10.09-én, Kivette a 9-es számot, tehát akármennyi karakter beleírható.
+            <input id="inputMezo"   type="text"  value=""  maxlength="" onkeydown="billty(event)">
+
+            <div id="csik"> </div>
+
+            <div id="haromgomb">
+                <button class="gombok" id="fogomb"> Listába </button>
+                <button class="gombok" id="ujelem"> Új</button>
+                <button class="gombok" id="veletlenhatter"> Háttér </button>
+            </div>
+
+        </div> -->
+
+
+
+    <ul>
+        <li class="sor" id="sor1" data-szamozo="1">
+            the best...
+            <button class="ikon" id="ikon1" data-szamozo="1"> <i class="fas fa-space-shuttle"></i> </button>
+            <button class="torl" id="torl1"  data-szamozo="1" > Törlés  </button>
+            <button class="rejt tenylproba" id="teny1" data-szamozo="1" >Töröl</button>
+            <button class="rejt megsproba" id="megs1" data-szamozo="1" >Mégsem</button>
+        </li> 
+    </ul>
+
+    <button class="rejt telj" id="megsteljuj"> Mégsem </button>
+    <button class="rejt telj" id="tenyteljuj"> Megújulás </button>
+    <button class="" id="teljuj"> Törölni szeretnéd a teljes listát?</button>
+
+</section>
+
+<script src="icons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
